@@ -20,25 +20,6 @@ std::string RegexRule::pattern() const {
     return rulePattern;
 }
 
-// std::vector<Violation> RegexRule::check(const std::string& code, const std::string& filename) const {
-//     std::vector<Violation> violations;
-//     try{
-//     std::regex expr(rulePattern);
-//     std::istringstream iss(code);
-//     std::string line;
-//     int lineNum = 1;
-//     while (std::getline(iss, line)) {
-//         if (std::regex_search(line, expr)) {
-//             violations.push_back({filename, lineNum, ruleDescription});
-//         }
-//         lineNum++;
-//     }
-// } catch (const std::regex_error& e) {
-//     std::cerr << "[RegexRule ERROR] Invalid regex: " << rulePattern << " | " << e.what() << "\n";
-// }
-//     return violations;
-// }
-
 std::vector<Violation> RegexRule::check(const std::string& code, const std::string& filename) const {
     std::vector<Violation> violations;
     std::cout << "[DEBUG] Applying rule pattern: " << rulePattern << std::endl;
