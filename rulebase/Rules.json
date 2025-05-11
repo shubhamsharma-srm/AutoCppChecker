@@ -1,0 +1,37 @@
+[
+    {
+        "name": "No Using Namespace Std",
+        "description": "Avoid using namespace std in header files.",
+        "pattern": "using\\s+namespace\\s+std"
+    },
+    {
+        "name": "No Global Variables",
+        "description": "Global variable detected.",
+        "pattern": "^(?!#include|#define|class|struct).*\\bint\\s+\\w+\\s*(=|;)"
+    },
+    {
+        "name": "Avoid Goto",
+        "description": "Avoid using goto statements.",
+        "pattern": "\\bgoto\\b"
+    },
+    {
+        "name": "Avoid Deprecated Auto Pointers",
+        "description": "Avoid use of deprecated std::auto_ptr.",
+        "pattern": "std::auto_ptr<"
+    },
+    {
+        "name": "Avoid C-style Casts",
+        "description": "Avoid using C-style casts.",
+        "pattern": "\\([^\\)]+\\)[\\s]*[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+        "name": "Avoid printf in C++",
+        "description": "Use of printf instead of std::cout or proper logging.",
+        "pattern": "\\bprintf\\s*\\("
+    },
+    {
+        "name": "Avoid magic numbers",
+        "description": "Avoid hardcoded magic numbers.",
+        "pattern": "\\b[0-9]+(?!\\s*[,;])"
+    }
+]

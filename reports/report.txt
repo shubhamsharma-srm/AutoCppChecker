@@ -1,0 +1,14 @@
+sample.cpp:5 - Avoid using namespace std in header files.
+sample.cpp:50 - Avoid using namespace std in header files.
+sample.cpp:8 - Global variable detected.
+sample.cpp:19 - Global variable detected.
+sample.cpp:31 - Global variable detected.
+sample.cpp:54 - Global variable detected.
+sample.cpp:12 - Avoid using goto statements.
+sample.cpp:31 - Avoid using C-style casts.
+sample.cpp:2 - Use of printf instead of std::cout or proper logging.
+sample.cpp:25 - Use of printf instead of std::cout or proper logging.
+sample.cpp:8 - Avoid hardcoded magic numbers.
+sample.cpp:19 - Avoid hardcoded magic numbers.
+sample.cpp:30 - Avoid hardcoded magic numbers.
+sample.cpp:72 - Avoid hardcoded magic numbers.
